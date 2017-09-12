@@ -28,6 +28,18 @@
 		428A618B1F6801A900D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428A618C1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428A618D1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		428A618F1F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
+		428A61901F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
+		428A61911F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
+		428A61921F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
+		428A61941F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
+		428A61951F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
+		428A61961F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
+		428A61971F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
+		428A61991F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
+		428A619A1F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
+		428A619B1F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
+		428A619C1F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +80,9 @@
 		428A615D1F6800A800D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A616A1F6800CA00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A61771F6800DB00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428A618E1F68061B00D6C057 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		428A61931F6809B300D6C057 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		428A61981F6809D900D6C057 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */,
+				428A61981F6809D900D6C057 /* Crypto.swift */,
+				428A618E1F68061B00D6C057 /* PrivateKey.swift */,
+				428A61931F6809B300D6C057 /* PublicKey.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -259,18 +277,22 @@
 				TargetAttributes = {
 					428A61491F67FF0E00D6C057 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					428A615C1F6800A800D6C057 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					428A61691F6800CA00D6C057 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					428A61761F6800DB00D6C057 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					428A617F1F6800FF00D6C057 = {
@@ -336,6 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428A61991F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A61941F6809B300D6C057 /* PublicKey.swift in Sources */,
+				428A618F1F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428A619A1F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A61951F6809B300D6C057 /* PublicKey.swift in Sources */,
+				428A61901F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428A619B1F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A61961F6809B300D6C057 /* PublicKey.swift in Sources */,
+				428A61911F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428A619C1F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A61971F6809B300D6C057 /* PublicKey.swift in Sources */,
+				428A61921F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +526,7 @@
 		428A61531F67FF0E00D6C057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -505,6 +540,7 @@
 				PRODUCT_MODULE_NAME = VirgilCryptoAPI;
 				PRODUCT_NAME = VirgilCryptoAPI;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -512,6 +548,7 @@
 		428A61541F67FF0E00D6C057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -532,6 +569,7 @@
 		428A61631F6800A800D6C057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -547,6 +585,7 @@
 				PRODUCT_NAME = VirgilCryptoAPI;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -554,6 +593,7 @@
 		428A61641F6800A800D6C057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -577,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -589,6 +630,7 @@
 				PRODUCT_NAME = VirgilCryptoAPI;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
@@ -599,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -620,6 +663,7 @@
 		428A617D1F6800DB00D6C057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -632,6 +676,7 @@
 				PRODUCT_NAME = VirgilCryptoAPI;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
@@ -641,6 +686,7 @@
 		428A617E1F6800DB00D6C057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
