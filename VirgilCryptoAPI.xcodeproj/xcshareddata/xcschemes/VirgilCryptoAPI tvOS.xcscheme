@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "428A61761F6800DB00D6C057"
-               BuildableName = "VirgilCryptoAPI tvOS.framework"
+               BuildableName = "VirgilCryptoAPI.framework"
                BlueprintName = "VirgilCryptoAPI tvOS"
                ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42CDC22E1F6820A900D69111"
+               BuildableName = "VirgilCryptoAPI tvOS Tests.xctest"
+               BlueprintName = "VirgilCryptoAPI tvOS Tests"
+               ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "428A61761F6800DB00D6C057"
+            BuildableName = "VirgilCryptoAPI.framework"
+            BlueprintName = "VirgilCryptoAPI tvOS"
+            ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "428A61761F6800DB00D6C057"
-            BuildableName = "VirgilCryptoAPI tvOS.framework"
+            BuildableName = "VirgilCryptoAPI.framework"
             BlueprintName = "VirgilCryptoAPI tvOS"
             ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
          </BuildableReference>
@@ -64,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "428A61761F6800DB00D6C057"
-            BuildableName = "VirgilCryptoAPI tvOS.framework"
+            BuildableName = "VirgilCryptoAPI.framework"
             BlueprintName = "VirgilCryptoAPI tvOS"
             ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
          </BuildableReference>

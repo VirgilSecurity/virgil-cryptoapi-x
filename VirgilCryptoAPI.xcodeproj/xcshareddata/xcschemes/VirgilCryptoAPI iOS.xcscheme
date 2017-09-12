@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "428A61A01F681D6A00D6C057"
+               BuildableName = "VirgilCryptoAPI iOS Tests.xctest"
+               BlueprintName = "VirgilCryptoAPI iOS Tests"
+               ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "428A61491F67FF0E00D6C057"
+            BuildableName = "VirgilCryptoAPI.framework"
+            BlueprintName = "VirgilCryptoAPI iOS"
+            ReferencedContainer = "container:VirgilCryptoAPI.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
