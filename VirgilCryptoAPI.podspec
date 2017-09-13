@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage              = "https://github.com/VirgilSecurity/virgil-cryptoapi-x/"
   s.license               = { :type => "BSD", :file => "LICENSE" }
   s.author                = { "Oleksandr Deundiak" => "deundiak@gmail.com" }
-  s.platforms             = { :ios => "8.0", :osx => "10.10", :tvos => "10.0", :watchos => "3.0" }
+  s.platforms             = { :ios => "8.0", :osx => "10.10", :tvos => "9.0", :watchos => "2.0" }
   s.source                = { :git => "https://github.com/VirgilSecurity/virgil-cryptoapi-x.git",
                               :tag => s.version }
   s.weak_frameworks       = 'Foundation'
