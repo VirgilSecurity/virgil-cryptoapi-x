@@ -35,8 +35,8 @@
     return YES;
 }
 
-- (NSData *)computeSHA256For:(NSData *)data {
-    return [[NSData alloc] init];
+- (NSString *)computeSHA256For:(NSData *)data {
+    return [[NSString alloc] init];
 }
 
 - (id <VSAPublicKey>)importPublicKeyFrom:(NSData *)data error:(NSError **)error {
