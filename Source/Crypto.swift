@@ -31,7 +31,7 @@ import Foundation
     ///
     /// - Parameter data: the data to be hashed
     /// - Returns: the resulting hash value
-    func computeSHA256(for data: Data) -> String
+    func computeSHA256(for data: Data) -> Data
     
     /// Imports public key from its raw data representation.
     ///
