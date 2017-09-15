@@ -30,7 +30,7 @@ import Foundation
     /// Computes SHA-256.
     ///
     /// - Parameter data: the data to be hashed
-    /// - Returns: the resulting hash value in hex format
+    /// - Returns: the resulting hash value
     func computeSHA256(for data: Data) -> String
     
     /// Imports public key from its raw data representation.
