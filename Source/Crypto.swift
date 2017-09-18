@@ -16,7 +16,8 @@ import Foundation
     ///   - data: the data to be signed
     ///   - privateKey: the private key of the identity whose signature is going to be generated
     /// - Returns: signature data
-    func generateSignature(of data: Data, using privateKey: PrivateKey) -> Data
+    /// - Throws: correspoding error
+    func generateSignature(of data: Data, using privateKey: PrivateKey) throws -> Data
     
     /// Verifies the passed-in signature.
     ///
@@ -24,8 +25,8 @@ import Foundation
     ///   - signature: the signature bytes to be verified
     ///   - data: the data to be verified
     ///   - publicKey: the public key of the identity whose signature is going to be verified
-    /// - Returns: true if the signature was verified, false if not
-    func verifySignature(_ signature: Data, of data: Data, with publicKey: PublicKey) -> Bool
+    /// - Throws: error if verification failed
+    func verifySignature(_ signature: Data, of data: Data, with publicKey: PublicKey) throws
     
     /// Computes SHA-256.
     ///
@@ -44,5 +45,6 @@ import Foundation
     ///
     /// - Parameter publicKey: public key to be exported
     /// - Returns: raw public key representation
-    func exportPublicKey(_ publicKey: PublicKey) -> Data
+    /// - Throws: corresponding error
+    func exportPublicKey(_ publicKey: PublicKey) throws -> Data
 }
