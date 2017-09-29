@@ -27,11 +27,11 @@
 
 @implementation DummyCrypto
 
-- (NSData *)generateSignatureOf:(NSData *)data using:(id <VSAPrivateKey>)privateKey {
+- (NSData *)generateSignatureOf:(NSData *)data using:(id <VSAPrivateKey>)privateKey error:(NSError **)error {
     return [[NSData alloc] init];
 }
 
-- (BOOL)verifySignature:(NSData *)signature of:(NSData *)data with:(id <VSAPublicKey>)publicKey {
+- (BOOL)verifySignature:(NSData *)signature of:(NSData *)data with:(id <VSAPublicKey>)publicKey error:(NSError **)error {
     return YES;
 }
 
@@ -43,7 +43,7 @@
     return nil;
 }
 
-- (NSData *)exportPublicKey:(id <VSAPublicKey>)publicKey {
+- (NSData * _Nullable)exportPublicKey:(id<VSAPublicKey> _Nonnull)publicKey error:(NSError *__autoreleasing  _Nullable * _Nullable)error {
     return [[NSData alloc] init];
 }
 
