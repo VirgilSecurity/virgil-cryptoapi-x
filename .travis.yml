@@ -49,7 +49,6 @@ script:
   
   # Check pod lib
   - if [ $POD_LIB_LINT == "YES" ]; then
-      pod repo update;
       pod lib lint;
     fi
 
