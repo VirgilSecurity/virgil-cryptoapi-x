@@ -25,6 +25,9 @@
 
 /* Begin PBXBuildFile section */
 		16F9B6401FFE78D40005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
+		16F9B6411FFED1C50005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
+		16F9B6421FFED1D00005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
+		16F9B6431FFED1E30005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
 		428A61571F67FF7E00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428A618B1F6801A900D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428A618C1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -529,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F9B6411FFED1C50005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A619A1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61951F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A61901F68061B00D6C057 /* PrivateKey.swift in Sources */,
@@ -539,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F9B6421FFED1D00005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A619B1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61961F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A61911F68061B00D6C057 /* PrivateKey.swift in Sources */,
@@ -549,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F9B6431FFED1E30005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A619C1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61971F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A61921F68061B00D6C057 /* PrivateKey.swift in Sources */,
