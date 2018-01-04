@@ -22,10 +22,10 @@
 @implementation DummyPrivateKey
 @end
 
-@interface DummyCrypto: NSObject<VSACrypto>
+@interface DummyCardCrypto: NSObject<VSACardCrypto>
 @end
 
-@implementation DummyCrypto
+@implementation DummyCardCrypto
 
 - (NSData *)generateSignatureOf:(NSData *)data using:(id <VSAPrivateKey>)privateKey error:(NSError **)error {
     return [[NSData alloc] init];
@@ -77,12 +77,12 @@
 
 - (void)test001_testAPI {
     id <VSAAccessTokenSigner> accessTokenSigner = [[DummyAccessTokenSigner alloc] init];
-    id <VSACrypto> crypto = [[DummyCrypto alloc] init];
+    id <VSACardCrypto> cardCrypto = [[DummyCardCrypto alloc] init];
     id <VSAPublicKey> publicKey = [[DummyPublicKey alloc] init];
     id <VSAPrivateKey> privateKey = [[DummyPrivateKey alloc] init];
     
     XCTAssert(accessTokenSigner != nil);
-    XCTAssert(crypto != nil);
+    XCTAssert(cardCrypto != nil);
     XCTAssert(privateKey != nil);
     XCTAssert(publicKey != nil);
 }

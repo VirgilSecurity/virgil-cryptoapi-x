@@ -1,5 +1,5 @@
 //
-//  Crypto.swift
+//  CardCrypto.swift
 //  VirgilCryptoAPI
 //
 //  Created by Oleksandr Deundiak on 9/12/17.
@@ -9,7 +9,7 @@
 import Foundation
 
 /// This protocol defines a list of methods that provide signature generation/verification, sha-256 and public key import/export.
-@objc(VSACrypto) public protocol Crypto {
+@objc(VSACardCrypto) public protocol CardCrypto {
     /// Generates the digital signature of data using specified private key.
     ///
     /// - Parameters:

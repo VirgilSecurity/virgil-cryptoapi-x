@@ -37,10 +37,10 @@
 		428A61951F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
 		428A61961F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
 		428A61971F6809B300D6C057 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61931F6809B300D6C057 /* PublicKey.swift */; };
-		428A61991F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
-		428A619A1F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
-		428A619B1F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
-		428A619C1F6809D900D6C057 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* Crypto.swift */; };
+		428A61991F6809D900D6C057 /* CardCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* CardCrypto.swift */; };
+		428A619A1F6809D900D6C057 /* CardCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* CardCrypto.swift */; };
+		428A619B1F6809D900D6C057 /* CardCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* CardCrypto.swift */; };
+		428A619C1F6809D900D6C057 /* CardCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A61981F6809D900D6C057 /* CardCrypto.swift */; };
 		428A61A61F681D6B00D6C057 /* VirgilCryptoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A614A1F67FF0E00D6C057 /* VirgilCryptoAPI.framework */; };
 		428A61AE1F681DD500D6C057 /* VSA001_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A61AD1F681DD500D6C057 /* VSA001_APITests.m */; };
 		42CDC2251F68209300D69111 /* VirgilCryptoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A615D1F6800A800D6C057 /* VirgilCryptoAPI.framework */; };
@@ -111,7 +111,7 @@
 		428A61771F6800DB00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A618E1F68061B00D6C057 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
 		428A61931F6809B300D6C057 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
-		428A61981F6809D900D6C057 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		428A61981F6809D900D6C057 /* CardCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCrypto.swift; sourceTree = "<group>"; };
 		428A61A11F681D6A00D6C057 /* VirgilCryptoAPI iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirgilCryptoAPI iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A61AD1F681DD500D6C057 /* VSA001_APITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSA001_APITests.m; sourceTree = "<group>"; };
 		42CDC2201F68209300D69111 /* VirgilCryptoAPI macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirgilCryptoAPI macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,7 +211,7 @@
 			children = (
 				428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */,
 				16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */,
-				428A61981F6809D900D6C057 /* Crypto.swift */,
+				428A61981F6809D900D6C057 /* CardCrypto.swift */,
 				428A618E1F68061B00D6C057 /* PrivateKey.swift */,
 				428A61931F6809B300D6C057 /* PublicKey.swift */,
 			);
@@ -518,7 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A61991F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A61991F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				16F9B6401FFE78D40005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A61941F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A618F1F68061B00D6C057 /* PrivateKey.swift in Sources */,
@@ -529,7 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A619A1F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A619A1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61951F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A61901F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
@@ -539,7 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A619B1F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A619B1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61961F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A61911F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
@@ -549,7 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A619C1F6809D900D6C057 /* Crypto.swift in Sources */,
+				428A619C1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61971F6809B300D6C057 /* PublicKey.swift in Sources */,
 				428A61921F68061B00D6C057 /* PrivateKey.swift in Sources */,
 			);
