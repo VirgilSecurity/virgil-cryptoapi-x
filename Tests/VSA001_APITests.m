@@ -49,6 +49,26 @@
 
 @end
 
+@interface DummyAccessTokenSigner: NSObject<VSAAccessTokenSigner>
+@end
+
+@implementation DummyAccessTokenSigner
+
+- (NSData *)generateTokenSignatureOf:(NSData *)token using:(id <VSAPrivateKey>)privateKey error:(NSError **)error {
+    return [[NSData alloc] init];
+}
+
+- (BOOL)verifyTokenSignatureWithToken:(NSData *)token with:(id <VSAPublicKey>)publicKey error:(NSError **)error {
+    return YES;
+}
+
+
+- (NSString *)getAlgorithm {
+    return [[NSString alloc] init];
+}
+
+@end
+
 @interface VSA001_APITests : XCTestCase
 
 @end
@@ -56,10 +76,12 @@
 @implementation VSA001_APITests
 
 - (void)test001_testAPI {
+    id <VSAAccessTokenSigner> accessTokenSigner = [[DummyAccessTokenSigner alloc] init];
     id <VSACrypto> crypto = [[DummyCrypto alloc] init];
     id <VSAPublicKey> publicKey = [[DummyPublicKey alloc] init];
     id <VSAPrivateKey> privateKey = [[DummyPrivateKey alloc] init];
     
+    XCTAssert(accessTokenSigner != nil);
     XCTAssert(crypto != nil);
     XCTAssert(privateKey != nil);
     XCTAssert(publicKey != nil);
