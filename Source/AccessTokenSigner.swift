@@ -9,7 +9,7 @@
 import Foundation
 
 /// This protocol is responsible for signing & verifying tokens' signatures.
-@objc(VSAAccessTokenSigner) public protocol AccessTokenManager {
+@objc(VSAAccessTokenSigner) public protocol AccessTokenSigner {
     /// Generates the digital signature of data using specified private key.
     ///
     /// - Parameters:
