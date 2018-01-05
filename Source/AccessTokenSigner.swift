@@ -22,12 +22,13 @@ import Foundation
     /// Verifies the passed-in token's signature.
     ///
     /// - Parameters:
+    ///   - signature: the signature bytes to be verified
     ///   - token: the token to be verified
     ///   - publicKey: the public key of the identity whose signature is going to be verified
     /// - Throws: error if verification failed
-    @objc func verifyTokenSignature(token: Data, with publicKey: PublicKey) throws
+    @objc func verifyTokenSignature(_ signature: Data, of token: Data, with publicKey: PublicKey) throws
     
-    ///Represets algorirhm used for signing
+    ///Represets algorithm used for signing
     ///
     /// - Returns: algorithm title as String
     @objc func getAlgorithm() -> String
