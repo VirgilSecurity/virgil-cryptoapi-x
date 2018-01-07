@@ -28,7 +28,7 @@ import Foundation
     /// - Throws: error if verification failed
     @objc func verifyTokenSignature(_ signature: Data, of token: Data, with publicKey: PublicKey) throws
     
-    ///Represets algorithm used for signing
+    /// Represets algorithm used for signing
     ///
     /// - Returns: algorithm title as String
     @objc func getAlgorithm() -> String
