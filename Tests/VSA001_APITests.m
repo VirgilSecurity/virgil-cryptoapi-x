@@ -3,7 +3,7 @@
 //  VirgilCryptoAPI
 //
 //  Created by Oleksandr Deundiak on 9/12/17.
-//  Copyright © 2017 Oleksandr Deundiak. All rights reserved.
+//  Copyright © 2017 VirgilSecurity. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

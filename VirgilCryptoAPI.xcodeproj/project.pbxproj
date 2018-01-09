@@ -400,7 +400,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Oleksandr Deundiak";
+				ORGANIZATIONNAME = VirgilSecurity;
 				TargetAttributes = {
 					428A61491F67FF0E00D6C057 = {
 						CreatedOnToolsVersion = 8.3.3;

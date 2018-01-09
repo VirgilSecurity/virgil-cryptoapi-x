@@ -3,7 +3,7 @@
 //  VirgilCryptoAPI iOS
 //
 //  Created by Eugen Pivovarov on 1/4/18.
-//  Copyright © 2018 Oleksandr Deundiak. All rights reserved.
+//  Copyright © 2018 VirgilSecurity. All rights reserved.
 //
 
 import Foundation
