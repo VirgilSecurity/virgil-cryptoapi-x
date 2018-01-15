@@ -24,6 +24,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		16B3FD99200D0194008F0357 /* PrivateKeyExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */; };
+		16B3FD9A200D042C008F0357 /* PrivateKeyExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */; };
+		16B3FD9B200D0431008F0357 /* PrivateKeyExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */; };
+		16B3FD9C200D0434008F0357 /* PrivateKeyExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */; };
 		16F9B6401FFE78D40005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
 		16F9B6411FFED1C50005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
 		16F9B6421FFED1D00005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
@@ -105,6 +109,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyExporter.swift; sourceTree = "<group>"; };
 		16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenSigner.swift; sourceTree = "<group>"; };
 		428A614A1F67FF0E00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A614E1F67FF0E00D6C057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */,
+				16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */,
 				16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */,
 				428A61981F6809D900D6C057 /* CardCrypto.swift */,
 				428A618E1F68061B00D6C057 /* PrivateKey.swift */,
@@ -521,6 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B3FD99200D0194008F0357 /* PrivateKeyExporter.swift in Sources */,
 				428A61991F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				16F9B6401FFE78D40005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A61941F6809B300D6C057 /* PublicKey.swift in Sources */,
@@ -532,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B3FD9A200D042C008F0357 /* PrivateKeyExporter.swift in Sources */,
 				16F9B6411FFED1C50005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A619A1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61951F6809B300D6C057 /* PublicKey.swift in Sources */,
@@ -543,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B3FD9B200D0431008F0357 /* PrivateKeyExporter.swift in Sources */,
 				16F9B6421FFED1D00005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A619B1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61961F6809B300D6C057 /* PublicKey.swift in Sources */,
@@ -554,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B3FD9C200D0434008F0357 /* PrivateKeyExporter.swift in Sources */,
 				16F9B6431FFED1E30005EE7D /* AccessTokenSigner.swift in Sources */,
 				428A619C1F6809D900D6C057 /* CardCrypto.swift in Sources */,
 				428A61971F6809B300D6C057 /* PublicKey.swift in Sources */,
