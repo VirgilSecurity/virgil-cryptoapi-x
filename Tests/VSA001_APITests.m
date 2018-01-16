@@ -58,13 +58,28 @@
     return [[NSData alloc] init];
 }
 
-- (BOOL)verifyTokenSignatureWithToken:(NSData *)token with:(id <VSAPublicKey>)publicKey error:(NSError **)error {
+- (BOOL)verifyTokenSignature:(NSData *)signature of:(NSData *)token with:(id <VSAPublicKey>)publicKey error:(NSError **)error {
     return YES;
 }
 
 
 - (NSString *)getAlgorithm {
     return [[NSString alloc] init];
+}
+
+@end
+
+@interface DummyPrivateKeyExporter: NSObject<VSAPrivateKeyExporter>
+@end
+
+@implementation DummyPrivateKeyExporter
+
+- (NSData *)exportPrivateKeyWithPrivateKey:(id<VSAPrivateKey>)privateKey error:(NSError **)error {
+    return [[NSData alloc] init];
+}
+
+- (id<VSAPrivateKey>)importPrivateKeyWithData:(NSData *)data error:(NSError **)error {
+    return nil;
 }
 
 @end
@@ -77,11 +92,13 @@
 
 - (void)test001_testAPI {
     id <VSAAccessTokenSigner> accessTokenSigner = [[DummyAccessTokenSigner alloc] init];
+    id <VSAPrivateKeyExporter> privateKeyExporter = [[DummyPrivateKeyExporter alloc] init];
     id <VSACardCrypto> cardCrypto = [[DummyCardCrypto alloc] init];
     id <VSAPublicKey> publicKey = [[DummyPublicKey alloc] init];
     id <VSAPrivateKey> privateKey = [[DummyPrivateKey alloc] init];
     
     XCTAssert(accessTokenSigner != nil);
+    XCTAssert(privateKeyExporter != nil);
     XCTAssert(cardCrypto != nil);
     XCTAssert(privateKey != nil);
     XCTAssert(publicKey != nil);
