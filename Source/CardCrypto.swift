@@ -32,7 +32,8 @@ import Foundation
     ///
     /// - Parameter data: the data to be hashed
     /// - Returns: the resulting hash value
-    @objc func computeSHA256(for data: Data) -> Data
+    /// - Throws: corresponding error
+    @objc func generateSHA256(for data: Data) throws -> Data
     
     /// Imports public key from its raw data representation.
     ///

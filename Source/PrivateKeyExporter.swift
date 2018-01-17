@@ -24,5 +24,5 @@ import Foundation
     ///   - data: the data to be imported
     /// - Returns: imported Private Key instance
     /// - Throws: error if verification failed
-    @objc func importPrivateKey(data: Data) throws -> PrivateKey
+    @objc func importPrivateKey(from data: Data) throws -> PrivateKey
 }
