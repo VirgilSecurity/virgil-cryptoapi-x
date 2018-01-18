@@ -35,7 +35,7 @@
     return YES;
 }
 
-- (NSData *)computeSHA256For:(NSData *)data {
+- (NSData *)generateSHA256For:(NSData *)data error:(NSError *__autoreleasing  _Nullable * _Nullable)error {
     return [[NSData alloc] init];
 }
 
@@ -78,7 +78,7 @@
     return [[NSData alloc] init];
 }
 
-- (id<VSAPrivateKey>)importPrivateKeyWithData:(NSData *)data error:(NSError **)error {
+- (id<VSAPrivateKey>)importPrivateKeyFrom:(NSData *)data error:(NSError **)error {
     return nil;
 }
 
