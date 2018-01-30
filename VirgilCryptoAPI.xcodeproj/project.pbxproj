@@ -32,10 +32,6 @@
 		16F9B6411FFED1C50005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
 		16F9B6421FFED1D00005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
 		16F9B6431FFED1E30005EE7D /* AccessTokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */; };
-		428A61571F67FF7E00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428A618B1F6801A900D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428A618C1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428A618D1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428A618F1F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
 		428A61901F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
 		428A61911F68061B00D6C057 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A618E1F68061B00D6C057 /* PrivateKey.swift */; };
@@ -113,7 +109,6 @@
 		16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenSigner.swift; sourceTree = "<group>"; };
 		428A614A1F67FF0E00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A614E1F67FF0E00D6C057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirgilCryptoAPI.h; sourceTree = "<group>"; };
 		428A615D1F6800A800D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A616A1F6800CA00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A61771F6800DB00D6C057 /* VirgilCryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirgilCryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,7 +212,6 @@
 		428A61551F67FF7E00D6C057 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				428A61561F67FF7E00D6C057 /* VirgilCryptoAPI.h */,
 				16B3FD98200D0194008F0357 /* PrivateKeyExporter.swift */,
 				16F9B63F1FFE78D40005EE7D /* AccessTokenSigner.swift */,
 				428A61981F6809D900D6C057 /* CardCrypto.swift */,
@@ -242,7 +236,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A61571F67FF7E00D6C057 /* VirgilCryptoAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +243,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A618B1F6801A900D6C057 /* VirgilCryptoAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +250,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A618C1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +257,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A618D1F6801AA00D6C057 /* VirgilCryptoAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

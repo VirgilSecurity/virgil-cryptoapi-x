@@ -1,6 +1,6 @@
 //
 //  AccessTokenSigner.swift
-//  VirgilCryptoAPI iOS
+//  VirgilCryptoAPI
 //
 //  Created by Eugen Pivovarov on 1/4/18.
 //  Copyright © 2018 VirgilSecurity. All rights reserved.
