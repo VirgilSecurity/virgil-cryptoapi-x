@@ -25,8 +25,8 @@ import Foundation
     ///   - signature: the signature bytes to be verified
     ///   - data: the data to be verified
     ///   - publicKey: the public key of the identity whose signature is going to be verified
-    /// - Throws: error if verification failed
-    @objc func verifySignature(_ signature: Data, of data: Data, with publicKey: PublicKey) throws
+    /// - Returns: true if verified, false otherwise
+    @objc func verifySignature(_ signature: Data, of data: Data, with publicKey: PublicKey) -> Bool
     
     /// Computes SHA-256.
     ///

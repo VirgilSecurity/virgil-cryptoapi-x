@@ -31,7 +31,7 @@
     return [[NSData alloc] init];
 }
 
-- (BOOL)verifySignature:(NSData *)signature of:(NSData *)data with:(id <VSAPublicKey>)publicKey error:(NSError **)error {
+- (BOOL)verifySignature:(NSData * _Nonnull)signature of:(NSData * _Nonnull)data with:(id<VSAPublicKey> _Nonnull)publicKey {
     return YES;
 }
 
@@ -58,10 +58,9 @@
     return [[NSData alloc] init];
 }
 
-- (BOOL)verifyTokenSignature:(NSData *)signature of:(NSData *)token with:(id <VSAPublicKey>)publicKey error:(NSError **)error {
+- (BOOL)verifyTokenSignature:(NSData *)signature of:(NSData *)token with:(id <VSAPublicKey>)publicKey {
     return YES;
 }
-
 
 - (NSString *)getAlgorithm {
     return [[NSString alloc] init];
