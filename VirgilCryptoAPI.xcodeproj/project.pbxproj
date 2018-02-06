@@ -452,9 +452,9 @@
 				428A61A01F681D6A00D6C057 /* VirgilCryptoAPI iOS Tests */,
 				428A615C1F6800A800D6C057 /* VirgilCryptoAPI macOS */,
 				42CDC21F1F68209300D69111 /* VirgilCryptoAPI macOS Tests */,
-				428A61691F6800CA00D6C057 /* VirgilCryptoAPI watchOS */,
 				428A61761F6800DB00D6C057 /* VirgilCryptoAPI tvOS */,
 				42CDC22E1F6820A900D69111 /* VirgilCryptoAPI tvOS Tests */,
+				428A61691F6800CA00D6C057 /* VirgilCryptoAPI watchOS */,
 				428A617F1F6800FF00D6C057 /* VirgilCryptoAPI */,
 			);
 		};
@@ -746,6 +746,7 @@
 		428A61531F67FF0E00D6C057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -768,6 +769,7 @@
 		428A61541F67FF0E00D6C057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -789,6 +791,7 @@
 		428A61631F6800A800D6C057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -812,6 +815,7 @@
 		428A61641F6800A800D6C057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -881,6 +885,7 @@
 		428A617D1F6800DB00D6C057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -904,6 +909,7 @@
 		428A617E1F6800DB00D6C057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
