@@ -35,7 +35,7 @@
     return YES;
 }
 
-- (NSData *)generateSHA256For:(NSData *)data error:(NSError *__autoreleasing  _Nullable * _Nullable)error {
+- (NSData *)generateSHA512For:(NSData *)data error:(NSError *__autoreleasing  _Nullable * _Nullable)error {
     return [[NSData alloc] init];
 }
 

@@ -28,12 +28,12 @@ import Foundation
     /// - Returns: true if verified, false otherwise
     @objc func verifySignature(_ signature: Data, of data: Data, with publicKey: PublicKey) -> Bool
     
-    /// Computes SHA-256.
+    /// Computes SHA-512.
     ///
     /// - Parameter data: the data to be hashed
     /// - Returns: the resulting hash value
     /// - Throws: corresponding error
-    @objc func generateSHA256(for data: Data) throws -> Data
+    @objc func generateSHA512(for data: Data) throws -> Data
     
     /// Imports public key from its raw data representation.
     ///
