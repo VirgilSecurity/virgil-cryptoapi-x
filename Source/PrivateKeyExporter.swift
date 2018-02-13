@@ -17,7 +17,7 @@ import Foundation
     /// - Returns: exported private key data
     /// - Throws: correspoding error
     @objc func exportPrivateKey(privateKey: PrivateKey) throws -> Data
-    
+
     /// Imports Private Key from data
     ///
     /// - Parameters:

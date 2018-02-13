@@ -18,7 +18,7 @@ import Foundation
     /// - Returns: signature data
     /// - Throws: correspoding error
     @objc func generateTokenSignature(of token: Data, using privateKey: PrivateKey) throws -> Data
-    
+
     /// Verifies the passed-in token's signature.
     ///
     /// - Parameters:
@@ -27,7 +27,7 @@ import Foundation
     ///   - publicKey: the public key of the identity whose signature is going to be verified
     /// - Returns: true if verified, false otherwise
     @objc func verifyTokenSignature(_ signature: Data, of token: Data, with publicKey: PublicKey) -> Bool
-    
+
     /// Represets algorithm used for signing
     ///
     /// - Returns: algorithm title as String

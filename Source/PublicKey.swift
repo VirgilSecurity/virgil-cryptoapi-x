@@ -8,5 +8,6 @@
 
 import Foundation
 
-/// Represents the public key or some kind of reference to the public key. Implementation of this protocol is tied to correspoding Crypto protocol implementation.
+/// Represents the public key or some kind of reference to the public key.
+/// Implementation of this protocol is tied to correspoding Crypto protocol implementation.
 @objc(VSAPublicKey) public protocol PublicKey { }

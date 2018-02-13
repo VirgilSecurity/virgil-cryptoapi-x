@@ -8,7 +8,10 @@
 
 import Foundation
 
-/// This protocol defines a list of methods that provide signature generation/verification, sha-256 and public key import/export.
+/// This protocol defines a list of methods that provide:
+///     - signature generation/verification
+///     - sha-512
+///     - public key import/export
 @objc(VSACardCrypto) public protocol CardCrypto {
     /// Generates the digital signature of data using specified private key.
     ///
@@ -18,7 +21,7 @@ import Foundation
     /// - Returns: signature data
     /// - Throws: correspoding error
     @objc func generateSignature(of data: Data, using privateKey: PrivateKey) throws -> Data
-    
+
     /// Verifies the passed-in signature.
     ///
     /// - Parameters:
@@ -27,21 +30,21 @@ import Foundation
     ///   - publicKey: the public key of the identity whose signature is going to be verified
     /// - Returns: true if verified, false otherwise
     @objc func verifySignature(_ signature: Data, of data: Data, with publicKey: PublicKey) -> Bool
-    
+
     /// Computes SHA-512.
     ///
     /// - Parameter data: the data to be hashed
     /// - Returns: the resulting hash value
     /// - Throws: corresponding error
     @objc func generateSHA512(for data: Data) throws -> Data
-    
+
     /// Imports public key from its raw data representation.
     ///
     /// - Parameter data: raw public key representation
     /// - Returns: imported public key
     /// - Throws: corresponding error
     @objc func importPublicKey(from data: Data) throws -> PublicKey
-    
+
     /// Exports public key to its raw data representation.
     ///
     /// - Parameter publicKey: public key to be exported
