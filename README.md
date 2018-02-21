@@ -10,8 +10,15 @@
 
 ## Installation
 
-This framework can be installed using Carthage or Cocoapods. You need to reference this package directly only if you want to use Virgil products with your own cryptography implementation. Otherwise, you will get this package as a transitive dependency while installing [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x) or [VirgilCrypto](https://github.com/VirgilSecurity/virgil-foundation-x)
+This framework can be installed using Carthage or Cocoapods. You don't need to reference this package directly, only if you want to use Virgil products with your own cryptography implementation. Generally, you will get this package as a transitive dependency while installing [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x) or [VirgilCrypto](https://github.com/VirgilSecurity/virgil-foundation-x)
 
 ## License
 
 This library is released under the [3-clause BSD License](LICENSE.md).
+
+## Support
+Our developer support team is here to help you.
+
+You can find us on [Twitter](https://twitter.com/VirgilSecurity) or send us email support@VirgilSecurity.com.
+
+Also, get extra help from our support team on [Slack](https://join.slack.com/t/VirgilSecurity/shared_invite/enQtMjg4MDE4ODM3ODA4LTc2OWQwOTQ3YjNhNTQ0ZjJiZDc2NjkzYjYxNTI0YzhmNTY2ZDliMGJjYWQ5YmZiOGU5ZWEzNmJiMWZhYWVmYTM).
