@@ -55,6 +55,7 @@ script:
   
   # Check pod lib
   - if [ $POD_LIB_LINT == "YES" ]; then
+      gem install cocoapods --pre;
       pod lib lint;
     fi
 
