@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode10
+osx_image: xcode10.1
 
 env:
   global:
@@ -9,16 +9,16 @@ env:
     - MACOS_FRAMEWORK_SCHEME="VirgilCryptoAPI macOS"
     - TVOS_FRAMEWORK_SCHEME="VirgilCryptoAPI tvOS"
     - WATCHOS_FRAMEWORK_SCHEME="VirgilCryptoAPI watchOS"
-    - IOS_SDK=iphonesimulator12.0
+    - IOS_SDK=iphonesimulator12.1
     - MACOS_SDK=macosx10.14
-    - TVOS_SDK=appletvsimulator12.0
-    - WATCHOS_SDK=watchsimulator5.0
+    - TVOS_SDK=appletvsimulator12.1
+    - WATCHOS_SDK=watchsimulator5.1
     - FRAMEWORK_NAME=VirgilCryptoAPI
   matrix:
-    - DESTINATION="OS=12.0,name=iPhone SE"                   SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      TWO_STEP_BUILD_ENABLED="YES"  CARTHAGE_PLATFORM_NAME="iOS"      RUN_TESTS="YES"  PUBLISH_CARTHAGE="NO"   POD_LIB_LINT="YES"  SWIFT_LINT="NO"
-    - DESTINATION="arch=x86_64"                              SCHEME="$MACOS_FRAMEWORK_SCHEME"    SDK="$MACOS_SDK"    TWO_STEP_BUILD_ENABLED="YES"  CARTHAGE_PLATFORM_NAME="Mac"      RUN_TESTS="YES"  PUBLISH_CARTHAGE="YES"  POD_LIB_LINT="NO"   SWIFT_LINT="NO"
-    - DESTINATION="OS=12.0,name=Apple TV 4K"                 SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     TWO_STEP_BUILD_ENABLED="YES"  CARTHAGE_PLATFORM_NAME="tvOS"     RUN_TESTS="YES"  PUBLISH_CARTHAGE="NO"   POD_LIB_LINT="NO"   SWIFT_LINT="YES"
-    - DESTINATION="OS=5.0,name=Apple Watch Series 4 - 44mm"  SCHEME="$WATCHOS_FRAMEWORK_SCHEME"  SDK="$WATCHOS_SDK"  TWO_STEP_BUILD_ENABLED="NO"   CARTHAGE_PLATFORM_NAME="watchOS"  RUN_TESTS="YES"  PUBLISH_CARTHAGE="NO"   POD_LIB_LINT="NO"   SWIFT_LINT="NO"
+    - DESTINATION="OS=12.1,name=iPhone SE"                   SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      TWO_STEP_BUILD_ENABLED="YES"  CARTHAGE_PLATFORM_NAME="iOS"      RUN_TESTS="YES"  PUBLISH_CARTHAGE="NO"   POD_LIB_LINT="YES"  SWIFT_LINT="NO"   PUBLISH_DOCS="NO"
+    - DESTINATION="arch=x86_64"                              SCHEME="$MACOS_FRAMEWORK_SCHEME"    SDK="$MACOS_SDK"    TWO_STEP_BUILD_ENABLED="YES"  CARTHAGE_PLATFORM_NAME="Mac"      RUN_TESTS="YES"  PUBLISH_CARTHAGE="YES"  POD_LIB_LINT="NO"   SWIFT_LINT="NO"   PUBLISH_DOCS="YES"
+    - DESTINATION="OS=12.1,name=Apple TV 4K"                 SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     TWO_STEP_BUILD_ENABLED="YES"  CARTHAGE_PLATFORM_NAME="tvOS"     RUN_TESTS="YES"  PUBLISH_CARTHAGE="NO"   POD_LIB_LINT="NO"   SWIFT_LINT="YES"  PUBLISH_DOCS="NO"
+    - DESTINATION="OS=5.1,name=Apple Watch Series 4 - 44mm"  SCHEME="$WATCHOS_FRAMEWORK_SCHEME"  SDK="$WATCHOS_SDK"  TWO_STEP_BUILD_ENABLED="NO"   CARTHAGE_PLATFORM_NAME="watchOS"  RUN_TESTS="YES"  PUBLISH_CARTHAGE="NO"   POD_LIB_LINT="NO"   SWIFT_LINT="NO"   PUBLISH_DOCS="NO"
 
 before_install:
   - set -e
@@ -59,8 +59,14 @@ script:
       pod lib lint;
     fi
 
+after_success:
+  # Generate and publish docs
+  - if [ -n "${TRAVIS_TAG}" ] && [ $PUBLISH_DOCS == "YES" ]; then
+      ./CI/publish-docs.sh;
+    fi
+
 before_deploy:
-  - carthage archive $FRAMEWORK_NAME;
+  - carthage archive;
 
 deploy:
   # Upload framework to gh-releases for carthage
@@ -70,6 +76,15 @@ deploy:
     file: $FRAMEWORK_NAME.framework.zip
     skip_cleanup: true
     on:
-      repo: VirgilSecurity/cryptoapi-x
+      repo: VirgilSecurity/virgil-cryptoapi-x
       tags: true
       condition: $PUBLISH_CARTHAGE = "YES"
+
+  # Upload docs to gh-pages
+  - provider: pages
+    skip_cleanup: true
+    github-token: $GITHUB_TOKEN
+    local_dir: "docs"
+    on:
+      tags: true
+      condition: $PUBLISH_DOCS = "YES"

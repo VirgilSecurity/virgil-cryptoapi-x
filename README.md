@@ -1,6 +1,6 @@
 # Virgil Security Crypto API for Objective-C/Swift
 
-[![Build Status](https://api.travis-ci.org/VirgilSecurity/virgil-cryptoapi-x.svg?branch=master)](https://travis-ci.org/VirgilSecurity/virgil-cryptoapi-x)
+[![Build Status](https://api.travis-ci.com/VirgilSecurity/virgil-cryptoapi-x.svg?branch=master)](https://travis-ci.com/VirgilSecurity/virgil-cryptoapi-x)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/VirgilCryptoAPI.svg)](https://cocoapods.org/pods/VirgilCryptoAPI)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/VirgilCryptoAPI.svg?style=flat)](http://cocoadocs.org/docsets/VirgilCryptoAPI)
