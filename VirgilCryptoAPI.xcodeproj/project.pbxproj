@@ -1015,6 +1015,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.virgilsecurity.VirgilCryptoAPI-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
@@ -1028,6 +1029,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.virgilsecurity.VirgilCryptoAPI-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
