@@ -49,21 +49,21 @@ script:
 
   # Check pod lib
   - if [ $POD_LIB_LINT == "YES" ]; then
-    gem install cocoapods --pre;
-    pod repo update;
-    pod lib lint;
-  fi
+      gem install cocoapods --pre;
+      pod repo update;
+      pod lib lint;
+    fi
 
   # Build with carthage
   - if [ $PUBLISH_CARTHAGE == "YES" ]; then
-    carthage build --no-skip-current;
-    carthage archive;
+      carthage build --no-skip-current;
+      carthage archive;
     fi
 
   # Generate and publish docs
   - if [[ $PUBLISH_DOCS = "YES" && $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+ ]]; then
-    ./CI/publish-docs.sh;
-  fi
+      ./CI/publish-docs.sh;
+    fi
 
 deploy:
   # Upload framework to gh-releases for carthage
