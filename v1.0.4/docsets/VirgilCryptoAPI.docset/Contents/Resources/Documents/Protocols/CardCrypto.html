@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CardCrypto Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/CardCrypto" class="dashAnchor"></a>
+    <a title="CardCrypto Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">VirgilCryptoAPI Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">VirgilCryptoAPI Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CardCrypto Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AccessTokenSigner.html">AccessTokenSigner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CardCrypto.html">CardCrypto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKey">PrivateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PrivateKeyExporter.html">PrivateKeyExporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPublicKey">PublicKey</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CardCrypto</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc(VSACardCrypto)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CardCrypto</span></code></pre>
+
+                </div>
+              </div>
+            <p>This protocol defines a list of methods that provide:
+    - signature generation/verification
+    - sha-512
+    - public key import/export</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)generateSignatureOf:using:error:"></a>
+                    <a name="//apple_ref/swift/Method/generateSignature(of:using:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)generateSignatureOf:using:error:">generateSignature(of:using:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates the digital signature of data using specified private key.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    correspoding error
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">generateSignature</span><span class="p">(</span><span class="n">of</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">using</span> <span class="nv">privateKey</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKey">PrivateKey</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the data to be signed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>privateKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the private key of the identity whose signature is going to be generated</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>signature data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)verifySignature:of:with:"></a>
+                    <a name="//apple_ref/swift/Method/verifySignature(_:of:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)verifySignature:of:with:">verifySignature(_:of:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Verifies the passed-in signature.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">verifySignature</span><span class="p">(</span><span class="n">_</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">of</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">with</span> <span class="nv">publicKey</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPublicKey">PublicKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the signature bytes to be verified</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the data to be verified</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the public key of the identity whose signature is going to be verified</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if verified, false otherwise</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)generateSHA512For:error:"></a>
+                    <a name="//apple_ref/swift/Method/generateSHA512(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)generateSHA512For:error:">generateSHA512(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Computes SHA-512.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    corresponding error
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">generateSHA512</span><span class="p">(</span><span class="k">for</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the data to be hashed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the resulting hash value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)importPublicKeyFrom:error:"></a>
+                    <a name="//apple_ref/swift/Method/importPublicKey(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)importPublicKeyFrom:error:">importPublicKey(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Imports public key from its raw data representation.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    corresponding error
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">importPublicKey</span><span class="p">(</span><span class="n">from</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPublicKey">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>raw public key representation</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>imported public key</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)exportPublicKey:error:"></a>
+                    <a name="//apple_ref/swift/Method/exportPublicKey(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSACardCrypto(im)exportPublicKey:error:">exportPublicKey(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Exports public key to its raw data representation.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    corresponding error
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">exportPublicKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">publicKey</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPublicKey">PublicKey</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>public key to be exported</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>raw public key representation</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://virgilsecurity.com/" target="_blank" rel="external">Virgil Security</a>. All rights reserved. (Last updated: 2019-01-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

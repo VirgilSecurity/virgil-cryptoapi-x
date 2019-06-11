@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PrivateKeyExporter Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/PrivateKeyExporter" class="dashAnchor"></a>
+    <a title="PrivateKeyExporter Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">VirgilCryptoAPI Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">VirgilCryptoAPI Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PrivateKeyExporter Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AccessTokenSigner.html">AccessTokenSigner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CardCrypto.html">CardCrypto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKey">PrivateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PrivateKeyExporter.html">PrivateKeyExporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPublicKey">PublicKey</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PrivateKeyExporter</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc(VSAPrivateKeyExporter)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PrivateKeyExporter</span></code></pre>
+
+                </div>
+              </div>
+            <p>This protocol is responsible for private keys import/export</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKeyExporter(im)exportPrivateKeyWithPrivateKey:error:"></a>
+                    <a name="//apple_ref/swift/Method/exportPrivateKey(privateKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKeyExporter(im)exportPrivateKeyWithPrivateKey:error:">exportPrivateKey(privateKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Exports data of specified Private key.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    correspoding error
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">exportPrivateKey</span><span class="p">(</span><span class="nv">privateKey</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKey">PrivateKey</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>privateKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the private key to be exported</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>exported private key data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKeyExporter(im)importPrivateKeyFrom:error:"></a>
+                    <a name="//apple_ref/swift/Method/importPrivateKey(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKeyExporter(im)importPrivateKeyFrom:error:">importPrivateKey(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Imports Private Key from data</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    error if verification failed
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">importPrivateKey</span><span class="p">(</span><span class="n">from</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols.html#/c:@M@VirgilCryptoAPI@objc(pl)VSAPrivateKey">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the data to be imported</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>imported Private Key instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://virgilsecurity.com/" target="_blank" rel="external">Virgil Security</a>. All rights reserved. (Last updated: 2019-06-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
